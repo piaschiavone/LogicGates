@@ -12,9 +12,9 @@ public class GarageGateTests : ILogicValue
     public void GetValueOnlyCOpensTheGate()
     {
         // Arrange
-        ILogicValue inputA = new LogicConstant(false);
-        ILogicValue inputB = new LogicConstant(false);
-        ILogicValue inputC = new LogicConstant(true);
+        ILogicValue inputA = new VariableValue(false);
+        ILogicValue inputB = new VariableValue(false);
+        ILogicValue inputC = new VariableValue(true);
 
         ILogicValue gate = new GarageGate(inputA, inputB, inputC);
 
